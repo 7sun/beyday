@@ -11,7 +11,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 h1 {
@@ -63,4 +63,10 @@ p {
 img {
   width: 500px;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 540px) {
+  img {
+      width: 300px;
+  }
 }
