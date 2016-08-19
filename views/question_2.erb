@@ -1,0 +1,18 @@
+<% if @show_hint %>
+  <h1>Oops! Wrong answer :( Try again.</h1>
+<% else %>
+  <h1>Nicely done! She might be no good, but you're doing great</h1>
+<% end %>
+<h3>Question 2</h3>
+<form action="question-3" method="get">
+  <label>
+    What MLB Stadium sells the most hotdogs every year?
+  </label>
+  <% if @show_hint %>
+    <p>Hint: It is the 3rd oldest baseball stadium in the US.</p>
+  <% end %>
+  <input type="text" name="stadium" placeholder="stadium">
+  <input type="submit" value="next">
+
+  <input type="hidden" name="name" value=<%= @name %>>
+</form>
