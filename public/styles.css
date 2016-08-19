@@ -54,3 +54,13 @@ input.inline-input {
 p {
   color: #FF5A5F;
 }
+
+.answer {
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+
+img {
+  width: 500px;
+  border-radius: 5px;
+}

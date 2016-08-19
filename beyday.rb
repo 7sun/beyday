@@ -16,7 +16,9 @@ get '/question-2' do
   @day = params[:day].strip
   @month = params[:month].strip.downcase
   @name = params[:name]
+
   @month = 'september' if @month == 'sep' || @month == 'sept'
+  @day = '14' if @day == '14th'
 
   redirect to("/question-1?show_hint=true&name=#{@name}") if @day != '14' || @month != 'september'
   erb :question_2
