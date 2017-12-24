@@ -1,2 +1,2 @@
-require './beyday.rb'
+require './vacay.rb'
 run Sinatra::Application

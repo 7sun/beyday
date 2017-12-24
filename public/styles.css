@@ -2,16 +2,16 @@
 
 html {
   font-family: 'Lato', sans-serif;
-  color: #555;
-  background-color: #087E8B;
+  color: rgba(253,112,108,1.00);
+  background-color: rgba(254,224,191,1.00);
 }
 
 body {
-  background-color: #BFD7EA;
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   min-height: 100vh;
+  text-align: center;
 }
 
 h1 {
@@ -36,13 +36,21 @@ input[type="text"] {
   padding: 0 5px;
 }
 
-input[type="submit"] {
+input[type="submit"], .button {
   margin-top: 30px;
   background-color: #FF5A5F;
   border-color: #FF5A5F;
   padding: 5px 20px;
   color: white;
   text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  display: block;
+}
+
+.button {
+  width: 200px;
+  margin: 20px auto;
 }
 
 input.inline-input {
@@ -69,4 +77,60 @@ img {
   img {
       width: 300px;
   }
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.radio-container label {
+  margin-left: 15px;
+}
+
+iframe {
+  margin-top: 20px;
+}
+
+form {
+  border: 3px solid #31B1EB;
+  border-radius: 5px;
+  padding: 20px;
+  width: 520px;
+  margin: 20px auto;
+}
+
+.palm-container {
+  width: 800px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2em;
+}
+
+.palm-container.bottom {
+  position: absolute;
+  bottom: 15px;
+}
+
+.palm {
+  animation: 1s infinite linear alternate tilt;
+}
+
+@keyframes tilt {
+  from {
+    transform: rotate(30deg)
+  }
+
+  to {
+    transform: rotate(-30deg)
+  }
+}
+
+.video {
+  width: 520px;
+}
+
+span {
+  color: #31B1EB;
 }
